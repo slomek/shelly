@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Ultimate Node.js-based MongoDB administration panel",
   "author": "Pawel Slomka <pslomka@pslomka.com>",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/slomek/shelly/issues"
   },
-  "homepage": "https://github.com/slomek/shelly#readme"
+  "homepage": "https://github.com/slomek/shelly#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.2"
+  }
 }
