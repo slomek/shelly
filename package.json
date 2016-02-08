@@ -1,0 +1,24 @@
+{
+  "name": "shelly",
+  "version": "0.1.0",
+  "description": "Ultimate Node.js-based MongoDB administration panel",
+  "author": "Pawel Slomka <pslomka@pslomka.com>",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "node",
+    "mongodb",
+    "administration",
+    "cms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slomek/shelly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slomek/shelly/issues"
+  },
+  "homepage": "https://github.com/slomek/shelly#readme"
+}
