@@ -21,7 +21,7 @@
     "url": "https://github.com/slomek/shelly/issues"
   },
   "homepage": "https://github.com/slomek/shelly#readme",
-  "dependencies": {
+  "peerDependencies": {
     "express": "^4.13.4",
     "mongoose": "^4.4.2"
   }
