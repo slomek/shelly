@@ -8,6 +8,7 @@ const modeler = require('./lib/modeler'),
     routerer = require('./lib/routerer');
 
 module.exports = function(pathDir) {
+    let absPathDir = path.resolve(pathDir);
     let modelFiles = fs.readdirSync(pathDir);
     let router = express.Router();
 
