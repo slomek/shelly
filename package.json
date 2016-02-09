@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "Ultimate Node.js-based MongoDB administration panel",
   "author": "Pawel Slomka <pslomka@pslomka.com>",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "prepublish": "babel -c -d ./lib ./src/ --presets es2015,stage-2",
+    "postpublish": "rm -r ./lib"
   },
   "keywords": [
     "node",

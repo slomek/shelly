@@ -1,12 +1,11 @@
-"use strict";
-const express = require('express');
+import express from 'express';
 
 function makeRouter(S) {
     function handleError(error, res, message) {
         res.status(500).send({error: message});
     }
 
-    let router = express.Router()
+    let router = express.Router();
 
     router.get('', (req, res) => {
         S.getAll()
@@ -15,7 +14,7 @@ function makeRouter(S) {
     });
 
     router.get('/:id', (req, res) => {
-        let id = req.params.id;
+        let {id} = req.params;
 
         S.getById(id)
             .then((post) => res.json(post))
@@ -31,7 +30,7 @@ function makeRouter(S) {
     });
 
     router.delete('/:id', (req, res) => {
-        let id = req.params.id;
+        let {id} = req.params.id;
 
         S.remove(id)
             .then(() => res.json({id}))
@@ -39,6 +38,6 @@ function makeRouter(S) {
     });
 
     return router;
-};
+}
 
-module.exports = {makeRouter};
+export default {makeRouter};

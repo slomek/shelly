@@ -1,5 +1,5 @@
-"use strict";
 function makeService(M) {
+
     let getAll = () => {
         return M.find().exec();
     };
@@ -14,8 +14,11 @@ function makeService(M) {
     };
 
     return {
-        getAll, getById, save, remove
+        getAll,
+        getById,
+        save,
+        remove
     };
-};
+}
 
-module.exports = {makeService};
+export default {makeService};
